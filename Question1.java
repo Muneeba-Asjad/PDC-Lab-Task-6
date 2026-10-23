@@ -12,7 +12,9 @@ public class Question1 {
         studentMap.put("Zain", 95);
 
         System.out.println("--- All Student Records ---");
-        System.out.println(studentMap);
+        for (Map.Entry<String, Integer> entry : studentMap.entrySet()) {
+            System.out.println("Name: " + entry.getKey() + " | Marks: " + entry.getValue());
+        }
 
         studentMap.put("Usman", 84);
         System.out.println("\nUpdated Marks for Usman: " + studentMap.get("Usman"));
@@ -20,8 +22,6 @@ public class Question1 {
         String searchName = "Sara";
         if (studentMap.containsKey(searchName)) {
             System.out.println("Marks of " + searchName + ": " + studentMap.get(searchName));
-        } else {
-            System.out.println(searchName + " not found!");
         }
 
         System.out.println("\nTotal number of students: " + studentMap.size());
