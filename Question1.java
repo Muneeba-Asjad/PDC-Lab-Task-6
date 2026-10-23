@@ -16,5 +16,7 @@ public class Question1 {
 
         studentMap.put("Usman", 84);
         System.out.println("\nUpdated Marks for Usman: " + studentMap.get("Usman"));
+
+        System.out.println("Marks of Sara: " + studentMap.get("Sara"));
     }
 }
