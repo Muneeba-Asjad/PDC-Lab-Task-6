@@ -8,5 +8,6 @@ public class Question1 {
         studentMap.put("Ali", 85);
         studentMap.put("Sara", 92);
         studentMap.put("Usman", 78);
+        studentMap.put("Ayesha", 88);
     }
 }
