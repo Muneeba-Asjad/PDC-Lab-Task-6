@@ -6,5 +6,6 @@ public class Question1 {
 
         // Student 1
         studentMap.put("Ali", 85);
+        studentMap.put("Sara", 92);
     }
 }
