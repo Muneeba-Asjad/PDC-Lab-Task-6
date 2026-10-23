@@ -13,5 +13,8 @@ public class Question1 {
 
         System.out.println("--- All Student Records ---");
         System.out.println(studentMap);
+
+        studentMap.put("Usman", 84);
+        System.out.println("\nUpdated Marks for Usman: " + studentMap.get("Usman"));
     }
 }
