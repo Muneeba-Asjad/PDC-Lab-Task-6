@@ -10,5 +10,8 @@ public class Question1 {
         studentMap.put("Usman", 78);
         studentMap.put("Ayesha", 88);
         studentMap.put("Zain", 95);
+
+        System.out.println("--- All Student Records ---");
+        System.out.println(studentMap);
     }
 }
