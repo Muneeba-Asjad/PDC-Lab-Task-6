@@ -17,7 +17,13 @@ public class Question1 {
         studentMap.put("Usman", 84);
         System.out.println("\nUpdated Marks for Usman: " + studentMap.get("Usman"));
 
-        System.out.println("Marks of Sara: " + studentMap.get("Sara"));
+        String searchName = "Sara";
+        if (studentMap.containsKey(searchName)) {
+            System.out.println("Marks of " + searchName + ": " + studentMap.get(searchName));
+        } else {
+            System.out.println(searchName + " not found!");
+        }
+
         System.out.println("\nTotal number of students: " + studentMap.size());
     }
 }
