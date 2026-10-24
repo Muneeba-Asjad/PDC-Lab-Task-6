@@ -59,6 +59,5 @@ public class Question3 {
         } else {
             System.out.println("Status              : Data mismatch detected.");
         }
-
     }
 }
