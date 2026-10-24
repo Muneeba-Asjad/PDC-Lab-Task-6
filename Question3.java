@@ -41,5 +41,7 @@ public class Question3 {
                 }
             }
         }
+        long endTime = System.currentTimeMillis();
+        long executionTime = endTime - startTime;
     }
 }
