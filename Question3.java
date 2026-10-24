@@ -15,6 +15,10 @@ public class Question3 {
             final int threadId = i;
             executor.submit(() -> {
                 for (int j = 1; j <= recordsPerThread; j++) {
+                    String studentId = "T" + threadId + "-S" + j;
+                    String studentName = "Student_" + threadId + "_" + j;
+
+                    studentMap.put(studentId, studentName);
                 }
             });
         }
