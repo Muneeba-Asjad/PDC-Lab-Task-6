@@ -53,5 +53,11 @@ public class Question3 {
         System.out.println("Actual Entries      : " + actualEntries);
         System.out.println("Retrieved Entries   : " + retrievedCount);
         System.out.println("Execution Time (ms) : " + executionTime + " ms");
+
+        if (expectedEntries == actualEntries && actualEntries == retrievedCount) {
+            System.out.println("Status              : Success (All entries inserted and retrieved safely!)");
+        } else {
+            System.out.println("Status              : Data mismatch detected.");
+        }
     }
 }
