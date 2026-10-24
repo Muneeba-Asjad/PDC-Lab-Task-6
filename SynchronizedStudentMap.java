@@ -48,5 +48,15 @@ public class SynchronizedStudentMap {
         int recordsPerThread = 100;
         int expectedEntries = totalThreads * recordsPerThread;
         int actualEntries = studentMap.size();
+
+        System.out.println("=== Multithreading Map Synchronization Results ===");
+        System.out.println("Expected Entries : " + expectedEntries);
+        System.out.println("Actual Entries   : " + actualEntries);
+
+        if (expectedEntries == actualEntries) {
+            System.out.println("Success: All student records were safely inserted!");
+        } else {
+            System.out.println("Error: Data loss detected due to concurrency issues.");
+        }
     }
 }
