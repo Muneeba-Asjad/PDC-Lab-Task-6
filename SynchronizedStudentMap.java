@@ -30,5 +30,8 @@ public class SynchronizedStudentMap {
                 }
             });
         }
+
+        // Step 4: Gracefully shut down the executor and wait for completion
+        executor.shutdown();
     }
 }
