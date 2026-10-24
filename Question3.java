@@ -10,5 +10,12 @@ public class Question3 {
         int recordsPerThread = 1000;
         ExecutorService executor = Executors.newFixedThreadPool(totalThreads);
         long startTime = System.currentTimeMillis();
+
+        for (int i = 1; i <= totalThreads; i++) {
+            final int threadId = i;
+            executor.submit(() -> {
+                // Thread task code goes here
+            });
+        }
     }
 }
