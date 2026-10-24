@@ -42,5 +42,11 @@ public class SynchronizedStudentMap {
             System.err.println("Execution was interrupted: " + e.getMessage());
             Thread.currentThread().interrupt();
         }
+
+        // Step 5: Verify expected vs actual counts
+        int totalThreads = 3;
+        int recordsPerThread = 100;
+        int expectedEntries = totalThreads * recordsPerThread;
+        int actualEntries = studentMap.size();
     }
 }
