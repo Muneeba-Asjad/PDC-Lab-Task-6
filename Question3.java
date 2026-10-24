@@ -31,5 +31,15 @@ public class Question3 {
             System.err.println("Execution was interrupted: " + e.getMessage());
             Thread.currentThread().interrupt();
         }
+        int retrievedCount = 0;
+        for (int i = 1; i <= totalThreads; i++) {
+            for (int j = 1; j <= recordsPerThread; j++) {
+                String key = "T" + i + "-S" + j;
+                String value = studentMap.get(key);
+                if (value != null) {
+                    retrievedCount++;
+                }
+            }
+        }
     }
 }
