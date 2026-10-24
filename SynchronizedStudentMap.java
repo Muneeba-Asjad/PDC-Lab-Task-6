@@ -21,7 +21,9 @@ public class SynchronizedStudentMap {
         for (int i = 1; i <= 3; i++) {
             final int threadId = i;
             executor.submit(() -> {
-                // Outer task body per thread
+                for (int j = 1; j <= 100; j++) {
+                    // Unique record creation logic
+                }
             });
         }
     }
