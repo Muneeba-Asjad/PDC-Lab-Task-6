@@ -33,5 +33,14 @@ public class SynchronizedStudentMap {
 
         // Step 4: Gracefully shut down the executor and wait for completion
         executor.shutdown();
+        try {
+            // Wait up to 5 seconds for all threads to finish their work
+            if (!executor.awaitTermination(5, TimeUnit.SECONDS)) {
+                System.out.println("Threads did not finish in time.");
+            }
+        } catch (InterruptedException e) {
+            System.err.println("Execution was interrupted: " + e.getMessage());
+            Thread.currentThread().interrupt();
+        }
     }
 }
