@@ -46,5 +46,12 @@ public class Question3 {
 
         int expectedEntries = totalThreads * recordsPerThread;
         int actualEntries = studentMap.size();
+
+        System.out.println("=== ConcurrentHashMap Performance Metrics ===");
+        System.out.println("Number of Threads   : " + totalThreads);
+        System.out.println("Expected Entries    : " + expectedEntries);
+        System.out.println("Actual Entries      : " + actualEntries);
+        System.out.println("Retrieved Entries   : " + retrievedCount);
+        System.out.println("Execution Time (ms) : " + executionTime + " ms");
     }
 }
