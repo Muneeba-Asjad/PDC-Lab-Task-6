@@ -14,7 +14,8 @@ public class Question3 {
         for (int i = 1; i <= totalThreads; i++) {
             final int threadId = i;
             executor.submit(() -> {
-                // Thread task code goes here
+                for (int j = 1; j <= recordsPerThread; j++) {
+                }
             });
         }
     }
