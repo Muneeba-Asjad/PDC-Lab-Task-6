@@ -22,5 +22,14 @@ public class Question3 {
                 }
             });
         }
+        executor.shutdown();
+        try {
+            if (!executor.awaitTermination(10, TimeUnit.SECONDS)) {
+                System.out.println("Threads did not finish in time.");
+            }
+        } catch (InterruptedException e) {
+            System.err.println("Execution was interrupted: " + e.getMessage());
+            Thread.currentThread().interrupt();
+        }
     }
 }
