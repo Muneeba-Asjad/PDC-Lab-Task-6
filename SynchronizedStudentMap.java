@@ -16,5 +16,13 @@ public class SynchronizedStudentMap {
 
         // Step 2: Create a thread pool with 3 threads
         ExecutorService executor = Executors.newFixedThreadPool(3);
+
+        // Step 3: Submit 3 tasks (one per thread) to insert records
+        for (int i = 1; i <= 3; i++) {
+            final int threadId = i;
+            executor.submit(() -> {
+                // Outer task body per thread
+            });
+        }
     }
 }
