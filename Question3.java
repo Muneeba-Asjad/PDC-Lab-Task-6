@@ -8,5 +8,6 @@ public class Question3 {
         ConcurrentHashMap<String, String> studentMap = new ConcurrentHashMap<>();
         int totalThreads = 5;
         int recordsPerThread = 1000;
+        ExecutorService executor = Executors.newFixedThreadPool(totalThreads);
     }
 }
