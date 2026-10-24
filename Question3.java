@@ -9,5 +9,6 @@ public class Question3 {
         int totalThreads = 5;
         int recordsPerThread = 1000;
         ExecutorService executor = Executors.newFixedThreadPool(totalThreads);
+        long startTime = System.currentTimeMillis();
     }
 }
