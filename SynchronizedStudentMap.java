@@ -22,7 +22,9 @@ public class SynchronizedStudentMap {
             final int threadId = i;
             executor.submit(() -> {
                 for (int j = 1; j <= 100; j++) {
-                    // Unique record creation logic
+                    // Unique Key example: T1-S1, T2-S50, T3-S100
+                    String studentId = "T" + threadId + "-S" + j;
+                    String studentName = "Student_" + threadId + "_" + j;
                 }
             });
         }
