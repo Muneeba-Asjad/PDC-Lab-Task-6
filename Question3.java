@@ -43,5 +43,8 @@ public class Question3 {
         }
         long endTime = System.currentTimeMillis();
         long executionTime = endTime - startTime;
+
+        int expectedEntries = totalThreads * recordsPerThread;
+        int actualEntries = studentMap.size();
     }
 }
