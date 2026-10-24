@@ -6,5 +6,6 @@ public class SynchronizedStudentMap {
 
     public static void main(String[] args) {
         // Application entry point
+        Map<String, String> standardMap = new HashMap<>();
     }
 }
