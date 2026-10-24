@@ -13,5 +13,8 @@ public class SynchronizedStudentMap {
 
         // Convert the HashMap into a thread-safe synchronized map
         Map<String, String> studentMap = Collections.synchronizedMap(standardMap);
+
+        // Step 2: Create a thread pool with 3 threads
+        ExecutorService executor = Executors.newFixedThreadPool(3);
     }
 }
